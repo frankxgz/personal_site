@@ -22,8 +22,8 @@ textarea {
   text-align: center;
 }
 
-.center h1 {
-  margin-bottom: 10px;
+.left h1{
+  margin-bottom:20px;
 }
 
 /* typography */
@@ -34,16 +34,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
   font-size: 1.7em;
-  letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
   color: #999;
 }
@@ -101,4 +99,63 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 10px;
+}
+
+/* Round corners */
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.round_small {
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+}
+
+/*min*/
+div.work_container{
+  height:150px;
+  margin-bottom:15px;
+  padding:15px;
+  background-color:#BCBEC0;
+}
+
+div.work_photo{
+  position:relative;
+  float:left;
+  border:solid white 3px;
+  height:142px;
+  width:190px;
+}
+
+div.work_content{
+  position:relative;
+  float:right;
+  display:block;
+  white-space:break-word;
+  color:#fff;
+  height:120px;
+  width:230px;
+  font-size:0.8em;
+}
+
+div.work_content h3{
+  color:#fff;
+  font-size:1.5em;
+}
+
+div.work_content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+div.work_content a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+div.work_content a:visited {
+  color: #fff;
 }

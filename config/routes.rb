@@ -2,8 +2,8 @@ PersonalSite::Application.routes.draw do
   root :to => 'static_pages#home'
   
   match '/',    :to => 'static_pages#home'
-  match '/work', :to => 'static_pages#work'
-  match '/academic', :to => 'static_pages#academic'
+  match '/experience', :to => 'static_pages#work'
+  match '/education', :to => 'static_pages#academic'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

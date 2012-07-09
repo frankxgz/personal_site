@@ -1,0 +1,85 @@
+<% provide(:title, 'Hobbies') %>
+<link rel="stylesheet" type="text/css" href="js/jqcloud/jqcloud.css" />
+<script type="text/javascript" src="js/jqcloud/jqcloud-1.0.0.js"></script>
+    <script type="text/javascript">
+      //sports cloud
+      var word_array = [
+          {text: "Football", weight: 10},
+          {text: "Swimming", weight: 9},
+          {text: "Badminton", weight: 8},
+          {text: "Table Tennis", weight: 8,},
+          {text: "Pool", weight: 7},
+          {text: "E-gamming", weight: 7}
+          // ...as many words as you want
+      ];
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#cloud").jQCloud(word_array);
+      });
+    </script>
+
+  <h1 style="font-size: 2em;margin-top:20px;">My Hobbies</h1>
+  <div class='round' style="background-color:whiteSmoke;padding:30px;">
+      <h3>Photography</h3>
+      <hr />
+      <div class="imageRow">
+      	<div class="set">
+      	  <div class="single first">
+      		  <a href="images/hb/p1.jpg" rel="lightbox[pg]" title="Photography"><img src="images/hb/p1-thumb.jpg" alt="image 1 0f 4 thumb" width="205"/></a>
+      		</div>
+          <div class="single">
+      		  <a href="images/hb/p2.jpg" rel="lightbox[pg]" title="Photography" ><img src="images/hb/p2-thumb.jpg" alt="image 2 0f 4 thumb" width="205"/></a>
+          </div>
+          <div class="single">
+      		  <a href="images/hb/p3.jpg" rel="lightbox[pg]" title="Photography"><img src="images/hb/p3-thumb.jpg" alt="image 3 0f 4 thumb" width="205"/></a>
+          </div>
+          <div class="single last">
+      		  <a href="images/hb/p4.jpg" rel="lightbox[pg]" title="Photography"><img src="images/hb/p4-thumb.jpg" alt="image 4 0f 4 thumb" width="205"/></a>
+          </div>
+      	</div>
+      </div>
+      
+      <h3>Painting</h3>
+      <hr />
+      <div class="imageRow">
+      	<div class="set">
+      	  <div class="single first">
+      		  <a href="images/hb/h1.jpg" rel="lightbox[pt]" title="Painting"><img src="images/hb/h1-thumb.jpg" alt="image 1 0f 3 thumb" width="205"/></a>
+      		</div>
+          <div class="single">
+      		  <a href="images/hb/h2.jpg" rel="lightbox[pt]" title="Painting" ><img src="images/hb/h2-thumb.jpg" alt="image 2 0f 3 thumb" width="205"/></a>
+          </div>
+          <div class="single">
+      		  <a href="images/hb/h3.jpg" rel="lightbox[pt]" title="Painting"><img src="images/hb/h3-thumb.jpg" alt="image 3 0f 4 thumb" width="205"/></a>
+          </div>
+          <div class="single last">
+      		  <a href="images/hb/h4.jpg" rel="lightbox[pt]" title="Painting"><img src="images/hb/h4-thumb.jpg" alt="image 4 0f 4 thumb" width="205"/></a>
+          </div>
+      	</div>
+      </div>
+      
+      <h3>Chinese Culture</h3>
+      <hr />
+      <div class="imageRow">
+      	<div class="set">
+      	  <div class="single first">
+      		  <a href="images/hb/c1.jpg" rel="lightbox[cc]" title="Chinese Culture"><img src="images/hb/c1-thumb.jpg" alt="image 1 0f 4 thumb" width="205"/></a>
+      		</div>
+          <div class="single">
+      		  <a href="images/hb/c2.jpg" rel="lightbox[cc]" title="Chinese Culture" ><img src="images/hb/c2-thumb.jpg" alt="image 2 0f 4 thumb" width="205"/></a>
+          </div>
+          <div class="single">
+      		  <a href="images/hb/c3.jpg" rel="lightbox[cc]" title="Chinese Culture"><img src="images/hb/c3-thumb.jpg" alt="image 3 0f 4 thumb" width="205"/></a>
+          </div>
+          <div class="single last">
+      		  <a href="images/hb/c4.jpg" rel="lightbox[cc]" title="Chinese Culture"><img src="images/hb/c4-thumb.jpg" alt="image 4 0f 4 thumb" width="205"/></a>
+          </div>
+      	</div>
+      </div>
+      
+      <h3>Sports</h3>
+      <hr />
+      <div id="cloud" style="height: 150px;"></div>
+      
+  </div>

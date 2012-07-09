@@ -11,6 +11,10 @@ class StaticPagesController < ApplicationController
   def skill
   end
   
+  def Hobbies
+  end
+  
   def about
   end
+  
 end

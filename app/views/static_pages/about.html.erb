@@ -1,29 +1,21 @@
-<% provide(:title, 'Experience') %>
+<% provide(:title, 'About') %>
 
-<link rel="stylesheet" type="text/css" href="js/jqcloud/jqcloud.css" />
-<script type="text/javascript" src="js/jqcloud/jqcloud-1.0.0.js"></script>
-<script type="text/javascript">
-  /*!
-   * Create an array of word objects, each representing a word in the cloud
-   */
-  var word_array = [
-      {text: "Java EE", weight: 15},
-      {text: "Appcelerator", weight: 10},
-      {text: "jQuery", weight: 9, link: "http://jquery.com/"},
-      {text: "JavaScript", weight: 8, html: {title: "I can haz any html attribute"}},
-      {text: "CSS", weight: 7},
-      {text: "HTML", weight: 6},
-      {text: "AppleScript", weight: 6},
-      {text: "Photoshop", weight: 5},
-      {text: "Illustrator", weight: 5},
-      
-      // ...as many words as you want
-  ];
+<h1 style="font-size: 2em">About</h1>
 
-  $(function() {
-    // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
-    $("#example").jQCloud(word_array);
-  });
-</script>
-
-<div id="example" class="round" style="width:100%; height: 250px;background-color:whiteSmoke;"></div>
+<div class='round' style="background-image:url('images/about.jpg');padding:30px;">
+  <div class="round" style="background-color:#fff;padding:30px;width:300px;">
+  <h3 style="color:#0073EA;">The website is built by Xie Guangzhi (Frank).</h3> 
+  <h3 style="margin-top:20px;margin-bottom:20px;color:#FF0084;">You can contact me for:</h3>
+  <ul style="margin-bottom:20px;">
+    <li class="edu_li">Similar website development</li>
+    <li class="edu_li">Web design</li>
+    <li class="edu_li">Mobile app development</li>
+    <li class="edu_li">Lightweight Enterprise Resource Planning development</li>
+    <li class="edu_li">Partnership</li>
+    <li class="edu_li">Job offering</li>
+  </ul> 
+  
+  <a href="mailto:frankxgz@gmail.com?subject=Web_Enquiry" target="_blank" class="btn btn-large btn-primary">Contact me now</a>
+  </div>
+  
+</div>

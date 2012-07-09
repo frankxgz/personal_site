@@ -1,14 +1,13 @@
 <% provide(:title, 'Education') %>
 <script>
 	$(function() {
-		$( "#accordion" ).accordion({ event: 'click' });
+		$( ".accordion" ).accordion({ event: 'click' });
 	});
 </script>
 
-
-
-<div id="accordion" style="position:relative;top:-5px;">
-	<h3><a href="#">University</a></h3>
+<h1 style="font-size: 2em">University</h1>
+<div class="accordion" style="position:relative;top:-5px;">
+	<h3><a href="#">Overview</a></h3>
 	<div>
     <div class="edu_left">
       <a href="http://www.nus.edu.sg" target="_blank"><h2>National University of Singapore</h2></a>
@@ -23,32 +22,98 @@
       <div class="imageRow">
       	<div class="set">
       	  <div class="single first">
-      		  <a href="images/nus1.jpg" rel="lightbox[nus]" title="Nankai"><img src="images/nus1-thumb.jpg" alt="Plants: image 1 0f 3 thumb" width="89"/></a>
+      		  <a href="images/nus1.jpg" rel="lightbox[nus]" title="NUS"><img src="images/nus1-thumb.jpg" alt="Plants: image 1 0f 3 thumb" width="89"/></a>
       		</div>
           <div class="single">
-      		  <a href="images/nus2.jpg" rel="lightbox[nus]" title="Nankai" ><img src="images/nus2-thumb.jpg" alt="Plants: image 2 0f 3 thumb" width="89"/></a>
+      		  <a href="images/nus2.jpg" rel="lightbox[nus]" title="NUS" ><img src="images/nus2-thumb.jpg" alt="Plants: image 2 0f 3 thumb" width="89"/></a>
           </div>
           <div class="single last">
-      		  <a href="images/nus3.jpg" rel="lightbox[nus]" title="Nankai"><img src="images/nus3-thumb.jpg" alt="Plants: image 3 0f 2 thumb" width="89"/></a>
+      		  <a href="images/nus3.jpg" rel="lightbox[nus]" title="NUS"><img src="images/nus3-thumb.jpg" alt="Plants: image 3 0f 2 thumb" width="89"/></a>
           </div>
       	</div>
       </div>
     </div>
 	</div>
 	
-	<h3><a href="#">High School</a></h3>
+	<h3><a href="#">Main Courses</a></h3>
 	<div>
-	  <div class="edu_left">
-		  <a href="http://www.cqnk.cq.cn/" target="_blank"><h2>Chongqing Nankai Middle School</h2></a>
-		  <ul>
+	  <table style="margin-top:20px;">
+	    <tr>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Enterprise Resource Planning Systems</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>IT and Customer Relationship</td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Information Systems Development Project</td>
+      </tr>
+      <tr>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Management of IS</td><td></td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>IT and Supply Chain Management</td><td></td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Service Science</td>
+      </tr>
+      <tr>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Financial Accounting</td><td></td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Principles of Economics</td><td></td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Business Communication</td>
+      </tr>
+      <tr>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Operating Systems</td><td></td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Computer Networks</td><td></td>
+        <td><span class="ui-icon ui-icon-circle-check"></span></td>
+        <td>Computer Graphics</td>
+      </tr>
+	  </table>
+	</div>
+	
+	<h3><a href="#">Activities</a></h3>
+	<div>
+	  <h4>King Edward VII Hall Xin Yao</h4>
+	  <p style="color:#999;font-size:1em;">Production Manager</p>
+	  
+	  <h4>NUS Chinese Society Publication</h4>
+	  <p style="color:#999;font-size:1em;">Vice Editor</p>
+	  
+	  <h4>NUS Chinese Calligraphy Society</h4>
+	  <p style="color:#999;font-size:1em;">Director</p>
+	  
+	  <h4>NUS Chinese Debate Team</h4>
+	  <p style="color:#999;font-size:1em;">Team member</p>
+	  
+	  <h4>YMCA Child Development Center Calligraphy Teaching</h4>
+	  <p style="color:#999;font-size:1em;">Volunteer</p>
+	  
+	  <h4>XQRJ Regional Chinese Song Writing Competition Steering Committee and Organization Committee</h4>
+	  <p style="color:#999;font-size:1em;">Office bearer and welfare IC</p>
+	  
+	  <h4>King Edward VII Hall Swimming Team</h4>
+	  <p style="color:#999;font-size:1em;">Team member</p>
+	</div>
+	
+</div>
+
+<h1 style="font-size: 2em;margin-top:20px;">High School</h1>
+<div class="accordion" style="position:relative;top:-5px;">
+	<h3><a href="#">Overview</a></h3>
+  <div>
+    <div class="edu_left">
+  	  <a href="http://www.cqnk.cq.cn/" target="_blank"><h2>Chongqing Nankai Middle School</h2></a>
+  	  <ul>
         <li class="edu_li">Founded in 1936 by the famous educator  Mr. Zhang Boling</li>
         <li class="edu_li">One of the key middle schools in China</li>
         <li class="edu_li">Covers an area of 362 mus  (24 hectares)</li>
       </ul>
-		</div>
-		<div class="edu_right">
-		  <span class="edu_year">2005 - 2008</span>
-		  <div class="imageRow">
+  	</div>
+  	<div class="edu_right">
+  	  <span class="edu_year">2005 - 2008</span>
+  	  <div class="imageRow">
       	<div class="set">
       	  <div class="single first">
       		  <a href="images/1.jpg" rel="lightbox[nk]" title="Nankai"><img src="images/1-thumb.jpg" alt="Plants: image 1 0f 3 thumb" width="89"/></a>
@@ -61,46 +126,80 @@
           </div>
       	</div>
       </div>
-		</div>
+  	</div>
+  </div>
+	
+	<h3><a href="#">Achievements</a></h3>
+	<div>
+	  <ul>
+      <li class="edu_li">Head of the Publicity Department of the student union</li>
+      <li class="edu_li">Chief Editor of the school magazine</li>
+      <li class="edu_li">League secretary of one of the Elite League Branch in China</li>
+      <li class="edu_li">3rd Prize in Olympic IT contest in Chongqing</li>
+    </ul>
 	</div>
 	
-	<h3><a href="#">Junior Middle School</a></h3>
-	<div>
-		<div class="edu_left">
-		  <a href="http://www.cqnk.cq.cn/" target="_blank"><h2>Chongqing Nankai Middle School</h2></a>
-		  <ul>
+</div>
+
+<h1 style="font-size: 2em;margin-top:20px;">Junior Middle School</h1>
+<div class="accordion" style="position:relative;top:-5px;">
+	<h3><a href="#">Overview</a></h3>
+  <div>
+    <div class="edu_left">
+  	  <a href="http://www.cqnk.cq.cn/" target="_blank"><h2>Chongqing Nankai Middle School</h2></a>
+  	  <ul>
         <li class="edu_li">Founded in 1936 by the famous educator  Mr. Zhang Boling</li>
         <li class="edu_li">One of the key middle schools in China</li>
         <li class="edu_li">Covers an area of 362 mus  (24 hectares)</li>
       </ul>
-		</div>
-		<div class="edu_right">
-		  <span class="edu_year">2002 - 2005</span>
-		  <div class="imageRow">
-      		<div class="set">
-        	  <div class="single first">
-        		  <a href="images/1.jpg" rel="lightbox[nk2]" title="Nankai"><img src="images/1-thumb.jpg" alt="Plants: image 1 0f 3 thumb" width="89"/></a>
-        		</div>
-            <div class="single">
-        		  <a href="images/2.jpg" rel="lightbox[nk2]" title="Nankai" ><img src="images/2-thumb.jpg" alt="Plants: image 2 0f 3 thumb" width="89"/></a>
-            </div>
-            <div class="single last">
-        		  <a href="images/3.jpg" rel="lightbox[nk2]" title="Nankai"><img src="images/3-thumb.jpg" alt="Plants: image 3 0f 2 thumb" width="89"/></a>
-            </div>
-        	</div>
+  	</div>
+  	<div class="edu_right">
+  	  <span class="edu_year">2005 - 2008</span>
+  	  <div class="imageRow">
+      	<div class="set">
+      	  <div class="single first">
+      		  <a href="images/1.jpg" rel="lightbox[nk]" title="Nankai"><img src="images/1-thumb.jpg" alt="Plants: image 1 0f 3 thumb" width="89"/></a>
+      		</div>
+          <div class="single">
+      		  <a href="images/2.jpg" rel="lightbox[nk]" title="Nankai" ><img src="images/2-thumb.jpg" alt="Plants: image 2 0f 3 thumb" width="89"/></a>
+          </div>
+          <div class="single last">
+      		  <a href="images/3.jpg" rel="lightbox[nk]" title="Nankai"><img src="images/3-thumb.jpg" alt="Plants: image 3 0f 2 thumb" width="89"/></a>
+          </div>
+      	</div>
       </div>
-		</div>
+  	</div>
+  </div>
+	
+	<h3><a href="#">Achievements</a></h3>
+	<div>
+	  <ul>
+      <li class="edu_li">Art student having specialty in Painting and Chinese Calligraphy</li>
+      <li class="edu_li">One of the Outstanding Students in Chongqing</li>
+      <li class="edu_li">League secretary and monitor</li>
+      <li class="edu_li">First Prize in Chinese Calligraphy Competition in Chongqing</li>
+      <li class="edu_li">Second Prize in Painting Competition in China</li>  
+    </ul>
 	</div>
 	
+</div>
+
+<h1 style="font-size: 2em;margin-top:20px;">Primary School</h1>
+<div class="accordion" style="position:relative;top:-5px;">
 	<h3><a href="#">Primary School</a></h3>
-	<div>
-	  <div class="edu_left">
-		  <h2>Chang'an 3rd Primary School</h2> 
-		</div>
-		<div class="edu_right">
-		  <span class="edu_year">1996 - 2002</span>
-		</div>
-	</div>
+  <div>
+    <div class="edu_left">
+  	  <h2>Chang'an 3rd Primary School</h2>
+  	  <ul>
+        <li class="edu_li">Top student in the school</li>
+        <li class="edu_li">The Young Pioneers group chief</li>
+        <li class="edu_li">One of the Outstanding Young Pioneers in Jiangbei</li>
+      </ul> 
+  	</div>
+  	<div class="edu_right">
+  	  <span class="edu_year">1996 - 2002</span>
+  	</div>
+  </div>
 	
 </div>
 

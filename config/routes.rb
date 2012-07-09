@@ -5,6 +5,7 @@ PersonalSite::Application.routes.draw do
   match '/experience', :to => 'static_pages#work'
   match '/education', :to => 'static_pages#academic'
   match '/about', :to => 'static_pages#about'
+  match '/skills', :to => 'static_pages#skill'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

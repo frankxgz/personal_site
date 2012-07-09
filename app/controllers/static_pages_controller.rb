@@ -7,4 +7,10 @@ class StaticPagesController < ApplicationController
 
   def academic
   end
+  
+  def skill
+  end
+  
+  def about
+  end
 end

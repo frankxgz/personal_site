@@ -1,2 +1,29 @@
 <% provide(:title, 'Experience') %>
-<h2>About</h2>
+
+<link rel="stylesheet" type="text/css" href="js/jqcloud/jqcloud.css" />
+<script type="text/javascript" src="js/jqcloud/jqcloud-1.0.0.js"></script>
+<script type="text/javascript">
+  /*!
+   * Create an array of word objects, each representing a word in the cloud
+   */
+  var word_array = [
+      {text: "Java EE", weight: 15},
+      {text: "Appcelerator", weight: 10},
+      {text: "jQuery", weight: 9, link: "http://jquery.com/"},
+      {text: "JavaScript", weight: 8, html: {title: "I can haz any html attribute"}},
+      {text: "CSS", weight: 7},
+      {text: "HTML", weight: 6},
+      {text: "AppleScript", weight: 6},
+      {text: "Photoshop", weight: 5},
+      {text: "Illustrator", weight: 5},
+      
+      // ...as many words as you want
+  ];
+
+  $(function() {
+    // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+    $("#example").jQCloud(word_array);
+  });
+</script>
+
+<div id="example" class="round" style="width:100%; height: 250px;background-color:whiteSmoke;"></div>

@@ -223,7 +223,7 @@ li.edu_li{
 
 .imageRow .set {
   float: left;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: #252525;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -240,7 +240,7 @@ li.edu_li{
 }
 
 .imageRow .set:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #252525;
 }
 
 .imageRow .set .single a {

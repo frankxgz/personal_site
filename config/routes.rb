@@ -1,4 +1,8 @@
 PersonalSite::Application.routes.draw do
+  get "chinese_pages/home"
+
+  get "chinese_pages/work"
+
   root :to => 'static_pages#home'
   
   match '/',    :to => 'static_pages#home'
@@ -7,6 +11,13 @@ PersonalSite::Application.routes.draw do
   match '/about', :to => 'static_pages#about'
   match '/skills', :to => 'static_pages#skill'
   match '/hobbies', :to => 'static_pages#hobbies'
+  
+  match '/home_cn', :to => 'chinese_pages#home'
+  match '/experience_cn', :to => 'chinese_pages#work'
+  match '/education_cn', :to => 'chinese_pages#academic'
+  match '/about_cn', :to => 'chinese_pages#about'
+  match '/skills_cn', :to => 'chinese_pages#skill'
+  match '/hobbies_cn', :to => 'chinese_pages#hobbies'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

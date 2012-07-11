@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="shortcut icon" href="/favicon.ico"/>
-    <title>Guangzhi | <%= yield(:title) %></title>
+    <title>光之 | <%= yield(:title) %></title>
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     
@@ -28,18 +28,17 @@
     
     <style>
       h1, h2, h3, h4, h5, h6 {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: STHeiti;
       }
     </style>
-    
     
         
   </head>
   <body style="background-color:#DEDEDE">
-    <%= render 'layouts/header' %>
+    <%= render 'layouts/header_cn' %>
     <div class="container">
       <%= yield %>
-      <%= render 'layouts/footer' %>
+      <%= render 'layouts/footer_cn' %>
     </div>
   </body>
 </html>

@@ -12,12 +12,12 @@ PersonalSite::Application.routes.draw do
   match '/skills', :to => 'static_pages#skill'
   match '/hobbies', :to => 'static_pages#hobbies'
   
-  match '/home_cn', :to => 'chinese_pages#home'
-  match '/experience_cn', :to => 'chinese_pages#work'
-  match '/education_cn', :to => 'chinese_pages#academic'
-  match '/about_cn', :to => 'chinese_pages#about'
-  match '/skills_cn', :to => 'chinese_pages#skill'
-  match '/hobbies_cn', :to => 'chinese_pages#hobbies'
+  match '/home_cn', :to => 'chinese_pages#home_cn'
+  match '/experience_cn', :to => 'chinese_pages#work_cn'
+  match '/education_cn', :to => 'chinese_pages#academic_cn'
+  match '/about_cn', :to => 'chinese_pages#about_cn'
+  match '/skills_cn', :to => 'chinese_pages#skill_cn'
+  match '/hobbies_cn', :to => 'chinese_pages#hobbies_cn'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

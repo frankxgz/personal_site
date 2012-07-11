@@ -1,21 +1,21 @@
 class ChinesePagesController < ApplicationController
   layout "chinese_layout"
   
-  def home
+  def home_cn
   end
 
-  def work
+  def work_cn
   end
 
-  def academic
+  def academic_cn
   end
   
-  def skill
+  def skill_cn
   end
   
-  def Hobbies
+  def Hobbies_cn
   end
   
-  def about
+  def about_cn
   end
 end

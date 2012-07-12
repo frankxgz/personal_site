@@ -15,7 +15,11 @@
 
       $(function() {
         // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
-        $("#cloud").jQCloud(word_array);
+        try{
+        	$("#cloud").jQCloud(word_array);
+        }catch(e){
+        	$("#ie").show();
+        }
       });
     </script>
 
@@ -80,6 +84,23 @@
       
       <h3>体育</h3>
       <hr />
-      <div id="cloud" style="height: 150px;"></div>
+      <div id="cloud" style="height: 150px;">
+      	<table id="ie" style="margin-top:20px;visibility:hidden;">
+	    	<tr>
+        		<td><span class="ui-icon ui-icon-circle-check"></span></td>
+        		<td>足球</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        		<td><span class="ui-icon ui-icon-circle-check"></span></td>
+        		<td>游泳</td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        		<td><span class="ui-icon ui-icon-circle-check"></span></td>
+        		<td>羽毛球</td>
+        		<td><span class="ui-icon ui-icon-circle-check"></span></td>
+        		<td>乒乓球</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        		<td><span class="ui-icon ui-icon-circle-check"></span></td>
+        		<td>台球</td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        		<td><span class="ui-icon ui-icon-circle-check"></span></td>
+        		<td>电子竞技</td>
+      		</tr>
+      	</table>
+      </div>
       
   </div>

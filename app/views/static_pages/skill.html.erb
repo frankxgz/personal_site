@@ -3,6 +3,18 @@
 
 <script src="js/jquery.tagcanvas.min.js" type="text/javascript"></script>
     <script type="text/javascript">
+    	$(function() {
+    		$( "#dialog" ).dialog({
+    			autoOpen: false,
+				modal: true,
+				buttons: {
+					Ok: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			});
+		});
+		
       $(document).ready(function() {
         if(!$('#myCanvas').tagcanvas({
           textColour: '#0099FF',
@@ -13,6 +25,7 @@
         },'tags')) {
           // something went wrong, hide the canvas container
           //$('#myCanvasContainer').hide();
+          $( "#dialog" ).dialog( "open" );
         }
         if(!$('#myCanvas2').tagcanvas({
           textColour: '#FF0084',
@@ -30,10 +43,8 @@
 
     <div id="myCanvasContainer" class="round" style="background-color:whiteSmoke;padding-left:140px;">
       <canvas width="300" height="300" id="myCanvas" style="float:left;">
-        <p>Sorry, your browser does not support the canvas element. This website is best viewed with Chrome, Safari and FireFox.</p>
       </canvas>
       <canvas width="300" height="300" id="myCanvas2" style="margin-left:80px;">
-        <p></p>
       </canvas>
     </div>
     <div id="tags">
@@ -81,3 +92,8 @@
         <li><a href="">Efficiency</a></li>
       </ul>
     </div>
+    
+    <div id="dialog" title="Browser not supported">
+		<p>Sorry, your browser does not support the canvas element.</p> 
+		<p>This website is best viewed with Chrome, Safari and FireFox.</p>
+	</div>
